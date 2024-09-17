@@ -1,13 +1,24 @@
 # Course of NodeJs
+# Fundamentals HTTP
 
-# GET POST PUT PATCH DELETE
-# GET => buscar um recurso
-# POST => criar um recurso
-# PUT => atualizar um recurso
-# PATCH => atualizar uma informaçõa específica de um recurso
-# DELETE => deletar um recurso
-# STATEFULL - STATELESS
-# APLICAÇÃO STATEFULL => dados da aplicação são salvos em memória
-# APLICAÇÃO STATELESS => dados da aplicação são salvos em dispositivos externos como (banco de dados)
-# Cabeçalhos (requisição;resposta) => MetaDados
-# HTTP STATUS CODE
+METHODS:
+* GET
+* POST
+* PUT
+* PATCH
+* DELETE
+ 
+DIFFERENCE BETWEEN STATEFULL VS STATELESS
+
+* STATEFULL => application data is saved on memory
+* STATELESS => application data is saved on external devices example (database)
+
+HEADERS (request, response) 
+* metaData
+
+HTTP STATUS CODE
+* Informational responses (100 – 199)
+* Successful responses (200 – 299)
+* Redirection messages (300 – 399)
+* Client error responses (400 – 499)
+* Server error responses (500 – 599)
