@@ -1,0 +1,18 @@
+{
+  "name": "01-fundamentos-node-js-desafio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "bulk": "node streams/import-csv.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv": "^6.3.10",
+    "csv-parse": "^5.5.6"
+  }
+}
