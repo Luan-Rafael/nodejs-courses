@@ -1,5 +1,7 @@
-import CalculatePayroll from "../src/CalculatePayroll";
-import EmployeeData from "../src/EmployeeData";
+import CalculatePayroll, {
+  EmployeeDataCalculatePayroll,
+} from "../src/CalculatePayroll";
+import EmployeeDataDatabase from "../src/EmployeeDataDatabase";
 
 test("Deve calcular a folha de pagamento para um funcionario que ganha por hora", async () => {
   const input = {
@@ -8,12 +10,12 @@ test("Deve calcular a folha de pagamento para um funcionario que ganha por hora"
     year: 2024,
   };
 
-  const employeeData: EmployeeData = {
+  const employeeData: EmployeeDataCalculatePayroll = {
     async getEmployee(employeeId: number): Promise<any> {
       return { name: "Pedro Silva", wage: 50, type: "hourly" };
     },
 
-    async getEmployeeTimeRecords(
+    async getEmployeeTimeRecordsByMonthAndYear(
       employeeId: number,
       month: number,
       year: number
@@ -32,4 +34,20 @@ test("Deve calcular a folha de pagamento para um funcionario que ganha por hora"
 
   expect(output.employeeName).toBe("Pedro Silva");
   expect(output.salary).toBe(200);
+});
+
+test("Deve calcular a folha de pagamento para um voluntario", async () => {
+  const input = {
+    employeeId: 3,
+    month: 12,
+    year: 2024,
+  };
+
+  const employeeData = new EmployeeDataDatabase();
+
+  const calculatePayroll = new CalculatePayroll(employeeData);
+  const output = await calculatePayroll.execute(input);
+
+  expect(output.employeeName).toBe("Sergio Oliveira");
+  expect(output.salary).toBe(0);
 });

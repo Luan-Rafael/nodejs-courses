@@ -1,7 +1,7 @@
 export default interface EmployeeData {
   getEmployee(employeeId: number): Promise<any>;
 
-  getEmployeeTimeRecords(
+  getEmployeeTimeRecordsByMonthAndYear(
     employeeId: number,
     month: number,
     year: number

@@ -11,7 +11,7 @@ export default class EmployeeDataDatabase implements EmployeeData {
 
     return employee;
   }
-  async getEmployeeTimeRecords(
+  async getEmployeeTimeRecordsByMonthAndYear(
     employeeId: number,
     month: number,
     year: number

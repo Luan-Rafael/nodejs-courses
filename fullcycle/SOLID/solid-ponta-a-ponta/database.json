@@ -15,6 +15,14 @@
       "wage": null,
       "type": "salaried",
       "salary": 5000
+    },
+    {
+      "employee_id": 3,
+      "name": "Sergio Oliveira",
+      "role": "Ceo",
+      "wage": null,
+      "type": "volunteer",
+      "salary": null
     }
   ],
   "timeRecord": [
@@ -105,6 +113,46 @@
     },
     {
       "employee_id": 2,
+      "checkin_date": "2024-12-04T13:00:00-03:00",
+      "checkout_date": "2024-12-04T17:00:00-03:00"
+    },
+    {
+      "employee_id": 3,
+      "checkin_date": "2024-12-01T08:00:00-03:00",
+      "checkout_date": "2024-12-01T12:00:00-03:00"
+    },
+    {
+      "employee_id": 3,
+      "checkin_date": "2024-12-01T13:00:00-03:00",
+      "checkout_date": "2024-12-01T17:00:00-03:00"
+    },
+    {
+      "employee_id": 3,
+      "checkin_date": "2024-12-02T08:00:00-03:00",
+      "checkout_date": "2024-12-02T12:00:00-03:00"
+    },
+    {
+      "employee_id": 3,
+      "checkin_date": "2024-12-02T13:00:00-03:00",
+      "checkout_date": "2024-12-02T17:00:00-03:00"
+    },
+    {
+      "employee_id": 3,
+      "checkin_date": "2024-12-03T08:00:00-03:00",
+      "checkout_date": "2024-12-03T12:00:00-03:00"
+    },
+    {
+      "employee_id": 3,
+      "checkin_date": "2024-12-03T13:00:00-03:00",
+      "checkout_date": "2024-12-03T17:00:00-03:00"
+    },
+    {
+      "employee_id": 3,
+      "checkin_date": "2024-12-04T08:00:00-03:00",
+      "checkout_date": "2024-12-04T12:00:00-03:00"
+    },
+    {
+      "employee_id": 3,
       "checkin_date": "2024-12-04T13:00:00-03:00",
       "checkout_date": "2024-12-04T17:00:00-03:00"
     }
